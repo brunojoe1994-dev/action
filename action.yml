@@ -9,14 +9,14 @@ runs:
 inputs:
   fail-fast:
     description: 'Cancel all other workflows associated with a commit when fixing it.'
-    required: false
+    required: true
     default: 'true'
   commit-message:
     description: 'The commit message to use when fixing a commit.'
-    required: false
+    required: true
   comment:
     description: 'Add a custom comment to the PR when fixing a commit.'
-    required: false
+    required: 'default'
 outputs:
   autofix_started:
     description: |
